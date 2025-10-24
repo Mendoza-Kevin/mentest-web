@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog — MenTest</title>
+  <link rel="icon" type="image/png" href="img/logo-mentest.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <!-- Fondo -->
+  <div class="bg-doodles" aria-hidden="true">
+    <svg viewBox="0 0 900 600" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#0f2a41"></stop>
+          <stop offset="100%" stop-color="#0b1f33"></stop>
+        </linearGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#g1)"></rect>
+    </svg>
+  </div>
+
+  <!-- Navbar-->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="../index.html#inicio">MenTest</a>
+
+      <div class="menu-panel" id="menu-panel" role="navigation" aria-label="Menú principal">
+        <ul class="nav-links">
+          <li><a href="../index.html#inicio">Inicio</a></li>
+          <li><a href="../index.html#nosotros">Sobre Nosotros</a></li>
+          <li><a href="../index.html#aplicacion">Aplicación</a></li>
+          <li><a href="./blog.html" class="active">Blog</a></li>
+        </ul>
+        <a class="btn-download btn-mobile" href="../index.html#descargar">
+          <span class="btn-icon" aria-hidden="true">⬇</span>
+          Descargar
+        </a>
+      </div>
+
+      <a class="btn-download btn-desktop" href="../index.html#descargar">
+        <span class="btn-icon" aria-hidden="true">⬇</span>
+        Descargar
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="header-space" id="header-space"></div>
+
+  <!-- Contenido del Blog -->
+  <main class="container section blog-page">
+    <article class="prose">
+      <h1>“Descubre tu futuro con MenTest”</h1>
+      <p class="lead">
+        Una aplicación creada por jóvenes nicaragüenses para ayudarte a
+        encontrar tu vocación y tu perfil profesional.
+      </p>
+
+      <h2>Video de presentación</h2>
+      <!-- Video responsivo -->
+      <div class="embed embed-16x9">
+        <iframe
+          src="https://www.youtube.com/embed/EUfzHKBvkeY?si=U6uI7pOD1aSXfbBV"
+          title="Presentación MenTest"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="muted">
+        Conoce cómo MenTest puede ayudarte a descubrir tus fortalezas, intereses y
+        habilidades a través de pruebas interactivas y dinámicas.
+      </p>
+
+      <h2>Podcast disponible</h2>
+      <div class="audio-card">
+        <div class="audio-icon" aria-hidden="true">🔊</div>
+        <div class="audio-content">
+          <p class="audio-title">Buscando mi rumbo: historias de MenTest</p>
+          <p class="muted small">La guía y cómo puedes sacarle el mayor provecho a tomar decisiones sobre tu futuro.</p>
+          <audio controls preload="metadata" src="../audio/podcast-mentest.mp3">
+            Tu navegador no soporta audio HTML5.
+          </audio>
+        </div>
+      </div>
+
+      <h2>Empieza tu test hoy y descubre el camino que te llevará a tus metas.</h2>
+      <div class="cta-inline">
+        <img src="../img/blog-cta.jpg" alt="Estudiante realizando su test" onerror="this.style.display='none'">
+        <div class="cta-inline__text">
+          <p class="muted">Realiza tu primer test en menos de 5 minutos y recibe una orientación inicial.</p>
+          <a class="btn-download" href="../index.html#descargar">Inicia ahora</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer-->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="foot-brand">
+        <a href="../index.html#inicio" class="foot-logo">MenTest</a>
+        <p>App de pruebas vocacionales para descubrir tu camino.</p>
+      </div>
+
+      <div class="foot-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="../index.html#inicio">Inicio</a></li>
+          <li><a href="../index.html#nosotros">Sobre Nosotros</a></li>
+          <li><a href="../index.html#aplicacion">Aplicación</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-extra">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a>support@mentest.app</a></li>
+          <li>UNP, Managua — Nicaragua</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-copy">
+      © <span id="year"></span> MenTest — Proyecto educativo. Todos los derechos reservados.
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

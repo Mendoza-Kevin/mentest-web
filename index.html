@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MenTest</title>
+
+  <link rel="icon" type="image/png" href="img/logo-mentest.png">
+
+  <!-- Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Fondo decorativo -->
+  <div class="bg-doodles" aria-hidden="true">
+    <svg viewBox="0 0 900 600" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#0f2a41"></stop>
+          <stop offset="100%" stop-color="#0b1f33"></stop>
+        </linearGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#g1)"></rect>
+    </svg>
+  </div>
+
+  <!-- Header / Navbar-->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#inicio">MenTest</a>
+
+      <!-- Links centrados-->
+      <div class="menu-panel" id="menu-panel" role="navigation" aria-label="Menú principal">
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#aplicacion">Aplicación</a></li>
+          <li><a href="pages/blog.html" data-external>Blog</a></li>
+        </ul>
+        <a class="btn-download btn-mobile" href="#descargar">
+          <span class="btn-icon" aria-hidden="true">⬇</span>
+          Descargar
+        </a>
+      </div>
+      <a class="btn-download btn-desktop" href="#descargar">
+        <span class="btn-icon" aria-hidden="true">⬇</span>
+        Descargar
+      </a>
+
+      <!-- Toggle -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="header-space" id="header-space"></div>
+
+  <!-- Hero -->
+  <main id="inicio" class="container hero section">
+    <div class="hero-copy">
+      <p class="kicker">¡Bienvenido!</p>
+      <h1>Tu futuro empieza con conocerte a ti mismo.</h1>
+      <p class="lead">
+        MenTest te ayuda a descubrir tus fortalezas, intereses y vocación a través
+        de pruebas dinámicas y divertidas.
+      </p>
+      <div class="cta-row">
+        <a class="btn-ghost" href="#descargar">Probar la app</a>
+        <a class="btn-outline" href="#nosotros">Conocer más</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Features (tarjetas) -->
+  <section class="features features--cards">
+    <div class="container">
+      <ul class="cards-grid">
+        <li class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <path d="M9 15l6-3 -3 6z" fill="currentColor" />
+              <circle cx="12" cy="12" r="1.2" fill="currentColor" />
+            </svg>
+          </div>
+          <h3 class="card-title">Encuentra tu rumbo profesional</h3>
+        </li>
+        <li class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z" fill="none" stroke="currentColor"
+                stroke-width="1.6" />
+              <path
+                d="M19 12a7 7 0 0 1-.1 1l2 1-1.2 2-2.2-.6a7 7 0 0 1-1.6 1.6l.6 2.2-2 1.2-1-2a7 7 0 0 1-2 0l-1 2-2-1.2.6-2.2A7 7 0 0 1 7.3 16l-2.2.6L3.9 14l2-1a7 7 0 0 1 0-2l-2-1 1.2-2 2.2.6A7 7 0 0 1 8.9 7.3l-.6-2.2L10.3 4l1 2a7 7 0 0 1 2 0l1-2 2 1.2-.6 2.2A7 7 0 0 1 16.7 7l2.2-.6L20.1 8l-2 1c.1.3.1.7.1 1z"
+                fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="card-title">Explora distintas áreas de estudio</h3>
+        </li>
+        <li class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 3c3 0 7 4 7 7-3 1-6 3-8 5-2 2-4 5-5 8-3 0-7-4-7-7 3-1 6-3 8-5 2-2 4-5 5-8z" fill="none"
+                stroke="currentColor" stroke-width="1.6" />
+              <circle cx="15" cy="9" r="1.8" fill="none" stroke="currentColor" stroke-width="1.4" />
+            </svg>
+          </div>
+          <h3 class="card-title">Despierta tu espíritu emprendedor</h3>
+        </li>
+        <li class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 3h4a2 2 0 0 1 0 4H9v2h2a2 2 0 0 1 0 4H9v2h2a2 2 0 0 1 0 4H7v-3H5a2 2 0 1 1 0-4h2v-2H5a2 2 0 1 1 0-4h2V3z"
+                fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="card-title">Conoce el perfil que mejor encaja contigo</h3>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="nosotros" class="section container about">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <div class="about-grid">
+      <figure class="about-media">
+        <img src="img/about-us.jpeg" alt="Estudiantes presentando MenTest en la UNP - Nicaragua" />
+        <figcaption>Universidad UNP — Nicaragua</figcaption>
+      </figure>
+      <div class="about-text">
+        <p>
+          MenTest es una aplicación educativa desarrollada por estudiantes para
+          ayudar a jóvenes de secundaria y universidad a elegir su camino profesional.
+        </p>
+        <p>
+          Combinamos creatividad, tecnología y orientación vocacional para ofrecer
+          una herramienta moderna que te ayude a descubrir habilidades, intereses y
+          perfiles de carrera.
+        </p>
+        <p>
+          A través de diferentes tipos de test —vocacionales, de personalidad y de
+          emprendimiento— buscamos guiarte hacia decisiones más informadas y seguras.
+        </p>
+        <p>
+          Nuestro compromiso es fomentar el autoconocimiento, la motivación y el
+          desarrollo personal, aportando una experiencia interactiva que inspire a
+          cada estudiante a descubrir quién es y qué quiere lograr.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aplicación (gráficas) -->
+  <section id="aplicacion" class="section container app">
+    <h2 class="section-title">Aplicación</h2>
+
+    <div class="charts-grid">
+      <article class="chart-card">
+        <header>Resultados vocacionales por área</header>
+        <canvas id="barChart" height="140"></canvas>
+        <p class="chart-foot">Distribución de preferencias: datos de prueba.</p>
+      </article>
+
+      <article class="chart-card">
+        <header>Evolución de usuarios y finalización de test</header>
+        <canvas id="lineChart" height="140"></canvas>
+        <p class="chart-foot">Usuarios activos vs. finalizaciones (métricas de demo).</p>
+      </article>
+
+      <article class="chart-card">
+        <header>Tipos de test completados</header>
+        <canvas id="doughnutChart" height="140"></canvas>
+        <p class="chart-foot">Reparto entre test vocacional, personalidad y emprendimiento.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Descargas-->
+  <section id="descargar" class="section container download">
+    <h2 class="section-title">Descargar</h2>
+
+    <div class="dl-card">
+      <!-- SVG animado (Laptop)-->
+      <div class="dl-anim-wrap" aria-hidden="true">
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_qp1q7mct.json" background="transparent"
+          speed="1" loop autoplay style="width:150px;height:150px">
+        </lottie-player>
+      </div>
+      <div class="dl-content">
+        <p class="dl-lead">
+          Descarga la versión de pruebas y verifica tu progreso con nuestros test.
+        </p>
+
+        <ul class="dl-bullets">
+          <li>APK segura y ligera</li>
+          <li>Modo sin conexión (básico)</li>
+          <li>Resultados iniciales en 5 minutos</li>
+        </ul>
+
+        <div class="dl-cta">
+          <a class="btn-download big" href="#" role="button" aria-disabled="true">
+            APK (próximamente)
+          </a>
+          <span class="dl-note">* Requiere Android 8.0 o superior</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="foot-brand">
+        <a href="#inicio" class="foot-logo">MenTest</a>
+        <p>App de pruebas vocacionales para descubrir tu camino.</p>
+      </div>
+
+      <div class="foot-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#aplicacion">Aplicación</a></li>
+          <!-- Blog del footer también va a la página -->
+          <li><a href="pages/blog.html" data-external>Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-extra">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a>support@mentest.app</a></li>
+          <li>UNP, Managua — Nicaragua</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-copy">
+      © <span id="year"></span> MenTest — Proyecto educativo. Todos los derechos reservados.
+    </div>
+  </footer>
+  <!-- Chart.js CDN (gráficas) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="js/main.js"></script>
+</script>
+</body>
+</html>
