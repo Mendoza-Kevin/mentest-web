@@ -736,3 +736,43 @@ body.no-scroll{ overflow:hidden }
   font-weight: 800;
   color: #eaf2ff;
 }
+
+/* ===== Fix: charts centrados y con margen en móviles muy estrechos ===== */
+@media (max-width: 400px){
+  /* Asegura colchón lateral y centra la grilla */
+  .charts-grid{
+    padding-left: max(18px, 6vw, env(safe-area-inset-left));
+    padding-right: max(18px, 6vw, env(safe-area-inset-right));
+    justify-items: center;   /* centra cada item de la grilla */
+    margin-inline: auto;     /* centra el contenedor */
+    gap: 16px;               /* un poco menos de gap para caber cómodo */
+  }
+
+  /* Limita el ancho de cada tarjeta y la centra */
+  .chart-card{
+    width: min(100%, 340px);
+    margin-inline: auto;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  /* Evita desbordes del canvas en cards angostas */
+  .chart-card canvas{
+    display: block;
+    max-width: 100%;
+    height: auto;          /* deja que se adapte al ancho disponible */
+  }
+
+  /* Títulos y pies con espaciado compacto */
+  .chart-card header{ margin-bottom: 6px; }
+  .chart-foot{ margin-top: 6px; }
+}
+
+/* Extra: si tuvieras móviles aún más estrechos (≤320 px) */
+@media (max-width: 320px){
+  .charts-grid{
+    padding-left: max(20px, 7vw, env(safe-area-inset-left));
+    padding-right: max(20px, 7vw, env(safe-area-inset-right));
+  }
+  .chart-card{ width: min(100%, 320px); }
+}

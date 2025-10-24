@@ -9,7 +9,7 @@ const toggle     = $('.nav-toggle');
 const panel      = $('#menu-panel');
 const yearSpan   = $('#year');
 
-// Año del footer (si ya lo tienes puedes omitir)
+// Año del footer
 const yearElm = document.getElementById('year');
 if (yearElm) yearElm.textContent = new Date().getFullYear();
 
